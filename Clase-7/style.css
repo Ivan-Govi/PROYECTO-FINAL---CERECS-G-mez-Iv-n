@@ -1,0 +1,198 @@
+/* Formatear HTML */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #93bfe2;
+}
+header{
+    background-color: cadetblue;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.logo{
+    background-color: cadetblue;
+    font-family: 'Courier New';
+    font-size: large;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    padding: 5px;
+}
+h1{
+    margin: 30px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; 
+}
+p{
+    text-align: center;
+    font-size: large;
+    margin: 20 px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.links{
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+}
+.publi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "footer footer footer";
+    grid-template-rows: 100px 27fr 1fr 75px;
+    grid-template-rows: 25% auto 30%;
+    grid-column-gap: 10px;
+    grid-row-gap: 1px;
+}
+/*Establecemos las areas a trabajar de cada etiqueta*/
+
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+section#productos{
+    grid-area: productos;
+}
+section#servicios{
+    grid-area: servicios;
+}
+.nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: publicidad;
+}
+.border{
+    border: 3px solid black;
+    text-align: center;
+}
+
+/*Aplicamos estilos a los estilos hijo*/
+.grid-hijo{
+    background-color: burlywood;
+    border: 1px solid black;
+    padding: 15px;
+}
+@media screen and (max-width: 768px) {
+    *{
+        margin:0;
+        padding: 0;
+    }
+    body{
+        background-color: #ee9c9c;
+    }
+    .logo{
+        display: none;
+    }
+    /* .nav-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    } */
+    .nav a{
+        font-size: medium;
+    }
+    .contenido{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    h1{
+        text-align: center;
+        margin: 25px;
+    }
+    p{
+        padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    .links{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .publi{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "nav productos publicidad"
+        "nav servicios publicidad"
+        "footer footer footer";
+        grid-template-rows: 100px 27fr 1fr 75px;
+        grid-template-columns: 25% auto 30%;
+        grid-column-gap: 10px;
+        grid-row-gap: 1px;
+    }
+    header{
+        grid-area: header;
+    }
+    footer{
+        grid-area: footer;
+    }
+    section#productos{
+        grid-area: productos;
+    }
+    section#servicios{
+        grid-area: servicios;
+    }
+    .nav{
+        grid-area: nav;
+    }
+    aside{
+        grid-area: publicidad;
+    }
+    .border{
+        border: 3px solid black;
+        text-align: center;
+    }
+
+
+}

@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Inicio de seccion de inicio */
+
+body{
+    background-color: #DADDFC;
+    background-repeat: no-repeat;
+}
+
+
+header h1{
+    color:#DADDFC;
+    background-color: #396EB0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 10px;
+    font-size: 60px;
+}
+
+header nav{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+header nav a {
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none ;
+    color:#2E4C6D;
+    font-weight: bolder;
+}
+
+
+#grilla1{
+    display: grid;
+    grid-template-areas: 
+    "img info"
+    ;
+    grid-column-gap: 30px; /*Espacio de columnas entre si */
+}
+
+section#img{
+    grid-area: img;
+    padding: 5%;
+    }
+    
+section#info{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    grid-area: info;
+padding: 5%;}
+
+footer{
+    padding-top: 40px;
+    grid-area: footer;
+}
+
+footer p{
+    font-family: 'Outfit', sans-serif;
+    font-weight: bolder;
+    padding: 20px;
+padding-left: 30px;    
+font-size: 18px;
+
+}
+
+.pie{
+      
+    font-family: 'Merriweather Sans', sans-serif;
+    color:#2E4C6D;
+    font-size: 30px;
+    text-decoration: none ;
+    padding: 50px;
+
+}
+
+
+
+/* Cierre de seccion de inicio */
+
+/* Inicio de seccion de contacto */
+
+.titulos{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    color: #396EB0;
+    font-weight: bolder;
+}
+
+article img{
+display: block;
+margin: auto;
+}
+form{
+    padding: 30px;
+}
+form fieldset {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* Cierre de seccion de contacto */
+
+/* Inicio de seccion nosotros */
+
+article iframe{
+    display: block;
+margin: auto;
+}
+
+article p{
+    font-family: 'Outfit', sans-serif;
+    padding: 300px;
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+/* Cierre de seccion de nosotros */
+
+/* Inicio de seccion de galeria */
+
+
+
+/* Cierre de seccion de galeria */
